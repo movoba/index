@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="survey.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surveyform</title>
+  </head>
+  <body>
+    <h1 id="title">Cookie Rating</h1>
+    <p id="description">Please take a short moment to fill out this form</p>
+    <div id="hauptcontainer">
+      <form id="survey-form">
+        <div id="survey-container">
+          <label id="name-label" for="name"
+            >First name
+            <input
+              id="name"
+              type="text"
+              name="firstname"
+              placeholder="Please Enter Your First Name"
+              required
+            />
+          </label>
+          <label id="lastname-label" for="lastname"
+            >Last name
+            <input
+              id="lastname"
+              type="text"
+              name="lastname"
+              placeholder="Please Enter Your Last Name"
+              required
+            />
+          </label>
+
+          <label id="email-label" for="email"
+            >Please enter your email
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Please Enter Your Email Address"
+              required
+            />
+          </label>
+
+          <label id="number-label" for="number"
+            >Please enter your age
+            <input
+              id="number"
+              type="number"
+              name="age"
+              placeholder="Please Enter Your Age"
+              min="18"
+              max="99"
+              required
+            />
+          </label>
+        </div>
+        <div id="survey-container-two">
+          <label id="dropdown-label" for="dropdown"
+            >Choose your cookie
+            <select id="dropdown">
+              <option value="">Select an option</option>
+              <option value="1">Peanut Butter</option>
+              <option value="2">Fudge Striped</option>
+              <option value="3">Oreo</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="survey-container-three">
+          <label class="radio-label"
+            >Liked it <input class="radio" name="radio" type="radio" value="20"
+          /></label>
+          <label class="radio-label"
+            >Meh<input class="radio" name="radio" type="radio" value="21"
+          /></label>
+          <label class="radio-label"
+            >Didn't like it<input
+              class="radio"
+              name="radio"
+              type="radio"
+              value="22"
+          /></label>
+        </div>
+        <div id="survey-container-four">
+          <label id="textarea-label" for="textarea"
+            >Anything to add?
+            <textarea name="textarea" id="textarea" rows="4" cols="50">
+Give us your suggestions here</textarea
+            >
+          </label>
+        </div>
+        <div id="survey-container-five">
+          <label class="checkbox" for="checkbox1"
+            >I accept
+            <a href="https://www.freecodecamp.org/news/terms-of-service/"
+              >Terms and Conditions</a
+            >
+            <input
+              id="checkbox1"
+              type="checkbox"
+              name="abg"
+              value="23"
+              checked
+              required
+            />
+          </label>
+          <label class="checkbox" for="checkbox2"
+            >I want to receive regular newsletters
+            <input id="checkbox2" type="checkbox" name="agb" value="24" />
+          </label>
+        </div>
+
+        <div id="button">
+          <input type="submit" name="button" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
